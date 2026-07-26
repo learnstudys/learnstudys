@@ -132,3 +132,17 @@ Thank you for visiting my website. ❤️
 
 </body>
 </html>
+<h2 id="typing"></h2>
+
+<script>
+const text="Welcome To LearnStudys";
+let i=0;
+function type(){
+ if(i<text.length){
+   document.getElementById("typing").innerHTML+=text.charAt(i);
+   i++;
+   setTimeout(type,100);
+ }
+}
+type();
+  </script>
