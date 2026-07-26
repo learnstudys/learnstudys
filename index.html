@@ -1,4 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>LearnStudys | Shivam Kashyap</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Learn<span>Studys</span>
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button id="darkMode">
+🌙
+</button>
+
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<div class="left">
+
+<h3>Hello 👋</h3>
+
+<h1>I'm <span>Shivam Kashyap</span></h1>
+
+<h2>Founder of LearnStudys</h2>
+
+<p>
+
+Welcome to my official website.
+Explore my projects, skills and social links.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="#contact" class="btn2">
+Contact Me
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-telegram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="IMG_20260725_095051.jpg" alt="Shivam Kashyap">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Hi! I'm Shivam Kashyap, Founder of LearnStudys.
+I love web development, technology and learning new skills.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skill">
+
+<p>HTML</p>
+
+<div class="bar">
+<div class="fill html"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="bar">
+<div class="fill css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="bar">
+<div class="fill js"></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-card">
+
+<h3>LearnStudys Website</h3>
+
+<p>Educational Website Project.</p>
+
+<a href="#">Open Project</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Portfolio Website</h3>
+
+<p>Modern Responsive Portfolio.</p>
+
+<a href="#">Open Project</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: your@email.com</p>
+
+<p>Telegram: @yourusername</p>
+
+<p>GitHub: github.com/yourusername</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 LearnStudys | Shivam Kashyap</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html> *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+color:#fff;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:sticky;
+top:0;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.logo span{
+color:#00d4ff;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#00d4ff;
+}
+
+#darkMode{
+padding:10px 16px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:#00d4ff;
+color:#000;
+font-size:18px;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+font-size:55px;
+margin:15px 0;
+}
+
+.left span{
+color:#00d4ff;
+}
+
+.left p{
+font-size:18px;
+margin:20px 0;
+line-height:1.8;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn,
+.btn2{
+display:inline-block;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-right:12px;
+transition:.3s;
+}
+
+.btn{
+background:#00d4ff;
+color:#000;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.btn2{
+border:2px solid #00d4ff;
+color:#fff;
+}
+
+.btn2:hover{
+background:#00d4ff;
+color:#000;
+}
+
+.right{
+flex:1;
+text-align:center;
+}
+
+.right img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #00d4ff;
+box-shadow:0 0 35px #00d4ff;
+transition:.4s;
+}
+
+.right img:hover{
+transform:scale(1.05);
+}
+
+.social{
+margin-top:30px;
+}
+
+.social a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:55px;
+height:55px;
+margin:8px;
+border-radius:50%;
+background:#ffffff20;
+color:#fff;
+font-size:24px;
+text-decoration:none;
+transition:.3s;
+}
+
+.social a:hover{
+background:#00d4ff;
+color:#000;
+transform:translateY(-6px);
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+font-size:38px;
+margin-bottom:30px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+width:100%;
+height:12px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#00d4ff;
+}
+
+.html{width:95%;}
+.css{width:90%;}
+.js{width:75%;}
+
+.project-card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+margin:20px 0;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#00d4ff;
+color:#000;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.navbar ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.left h1{
+font-size:40px;
+}
+
+.right img{
+width:240px;
+height:240px;
+}
+
+}// ===========================
+// 🌙 Dark / Light Mode
+// ===========================
+
+const darkBtn = document.getElementById("darkMode");
+
+darkBtn.onclick = function () {
+
+document.body.classList.toggle("light");
+
+if(document.body.classList.contains("light")){
+
+darkBtn.innerHTML="☀️";
+
+}else{
+
+darkBtn.innerHTML="🌙";
+
+}
+
+};
+
+// ===========================
+// ✨ Typing Effect
+// ===========================
+
+const text = [
+"Founder of LearnStudys",
+"Web Developer",
+"Student",
+"Tech Enthusiast"
+];
+
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+const heading = document.querySelector(".left h2");
+
+function type(){
+
+current = text[i];
+
+if(!isDeleting){
+
+heading.innerHTML = current.substring(0,j++);
+if(j > current.length){
+isDeleting = true;
+setTimeout(type,1200);
+return;
+}
+
+}else{
+
+heading.innerHTML = current.substring(0,j--);
+
+if(j==0){
+isDeleting = false;
+i++;
+
+if(i==text.length){
+i=0;
+}
+}
+
+}
+
+setTimeout(type,isDeleting?60:120);
+
+}
+
+type();
+
+// ===========================
+// ⬆️ Back To Top Button
+// ===========================
+
+const topBtn = document.createElement("button");
+
+topBtn.innerHTML="⬆";
+
+topBtn.style.position="fixed";
+topBtn.style.right="20px";
+topBtn.style.bottom="20px";
+topBtn.style.width="50px";
+topBtn.style.height="50px";
+topBtn.style.borderRadius="50%";
+topBtn.style.border="none";
+topBtn.style.background="#00d4ff";
+topBtn.style.color="#000";
+topBtn.style.fontSize="22px";
+topBtn.style.cursor="pointer";
+topBtn.style.display="none";
+topBtn.style.zIndex="999";
+
+document.body.appendChild(topBtn);
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// ===========================
+// ✨ Scroll Animation
+// ===========================
+
+const sections=document.querySelectorAll("section");
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+sections.forEach(sec=>{
+
+sec.style.opacity="0";
+
+sec.style.transform="translateY(50px)";
+
+sec.style.transition="1s";
+
+observer.observe(sec);
+
+});
+
+// ===========================
+// 👋 Console Message
+// ===========================
+
+console.log("Welcome to LearnStudys Website");
 
 <h1>Shivam Kashyap</h1>
 
